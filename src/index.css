@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* css background-image generated using https://10015.io/tools/css-background-pattern-generator */
+.background {
+  background-image: radial-gradient(#ffffff 2.5px, transparent 2.5px), radial-gradient(#ffffff 2.5px, transparent 2.5px);
+  background-size: 36px 36px;
+  background-position: 0 0, 18px 18px;
+  background-color: #b1d2ff;
+}
+
+
+/* css loader generated using https://10015.io/tools/css-loader-generator */
+.spinner {
+   margin: 40px;
+   width: 11.2px;
+   height: 11.2px;
+   animation: spinner-z355kx 1s infinite linear;
+   border-radius: 11.2px;
+   box-shadow: 28px 0px 0 0 #fff, 17.4px 21.8px 0 0 #fff, -6.2px 27.2px 0 0 #fff, -25.2px 12px 0 0 #fff, -25.2px -12px 0 0 #fff, -6.2px -27.2px 0 0 #fff, 17.4px -21.8px 0 0 #fff;
+}
+
+@keyframes spinner-z355kx {
+   to {
+      transform: rotate(360deg);
+   }
+}
+
+.sp-176 {
+   width: -size-40-px;
+   height: -size-10-px;
+   color: #766DF4;
+   background:
+     radial-gradient(farthest-side,currentColor 90%,#0000) left  /-size-10-px -size-10-px,
+     radial-gradient(farthest-side,currentColor 90%,#0000) center/-size-10-px -size-10-px,
+     radial-gradient(farthest-side,currentColor 90%,#0000) right /-size-10-px -size-10-px,
+     linear-gradient(currentColor 0 0) center/100% -size-4-px; 
+   background-repeat: no-repeat;
+   position: relative;
+   animation: s6 -speed-2-s infinite linear;
+ }
+ .sp-176:before,
+ .sp-176:after {
+   content: "";
+   position: absolute;
+   inset:0;
+   background:inherit;
+   animation:inherit;
+   --s:calc(50% - -size-5-px);
+   animation-direction: reverse;
+ }
+ .sp-176:after {
+   --s:calc(-size-5-px - 50%);
+ }
+ 
+ @keyframes s6 {
+   0%   {transform: translate(var(--s,0)) rotate(0)}
+   100% {transform: translate(var(--s,0)) rotate(1turn)}
+ }
